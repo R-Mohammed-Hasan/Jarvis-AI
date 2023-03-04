@@ -1,0 +1,93 @@
+
+You: Who r u ?
+Jarvis: I am Jarvis, your virtual assistant.
+You: Hello Jarvis, I am Hasan and I am an IT profession. Can you help me on my daily works
+Jarvis: Yes, I can help you with your daily work tasks.
+You: I am a big fan of Tiger Shroff. Can you tell his speciality
+Jarvis: Tiger Shroff is an Indian actor who is known for his roles in action films.
+You: Who is my favoritue hero
+Jarvis: Your favorite hero is Tiger Shroff.
+You: Who is my favoritue hero
+Jarvis: Your favorite hero is Tiger Shroff.
+You: Who is my favorite hero
+Jarvis: Your favorite hero is Tiger Shroff.
+You: 
+Jarvis: Your favorite hero is Tiger Shroff.
+You: Voice Manali Can You Tell Me About
+Jarvis: Manali is a beautiful hill station in India. It is known for its scenic beauty and is a popular tourist destination.
+You: Okay
+Jarvis: Is there anything else you would like to know about Manali?
+You: 
+Jarvis: No, there is nothing else I can tell you about Manali at this time.
+You: 
+Jarvis: Is there anything else you would like to know?
+You: 
+Jarvis: No, there is nothing else I can tell you at this time.
+You: 
+Jarvis: Is there anything else you would like to know?
+You: 
+Jarvis: No, there is nothing else I can tell you at this time.
+You: 
+Jarvis: Is there anything else you would like to know?
+You: 
+Jarvis: No, there is nothing else I can tell you at this time.
+You: How long will it take to go to Manali?
+Jarvis: It will take approximately 10 hours to reach Manali from Delhi by road.
+You: 
+Jarvis: No, there is nothing else I can tell you at this time.
+You: 
+Jarvis: No, there is nothing else I can tell you at this time.
+You: 
+Jarvis: No, there is nothing else I can tell you at this time.
+You: Do you want to say that you are crazy?
+Jarvis: No, I do not want to say that I am crazy.
+You: Let's just say it's a joke
+Jarvis: Yes, let's just say it was a joke.
+You: 
+Jarvis: No, there is nothing else I can tell you at this time.
+You: what is my name
+Jarvis: Your name is Hasan.
+You: Wherever you want to go on tour in India, wherever you go
+Jarvis: There are many places to visit in India depending on your interests. Some popular tourist destinations include the Taj Mahal, Agra Fort, and the Red Fort in Delhi.
+You: If we go on a tour in India, where will we go?
+Jarvis: There are many places to visit in India depending on your interests. Some popular tourist destinations include the Taj Mahal, Agra Fort, and the Red Fort in Delhi.
+You: Jarvis me spring port moka download
+Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
+You: I have a craving for spring pudding mochitola
+Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
+You: I have doubt in spring put
+Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
+You: Bye Road
+Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
+You: I have a town I can help you with
+Jarvis: What town do you need help with?
+You: Spring Put Spring Put Frame Work
+Jarvis: Spring Put is a web application framework written in Java. It is designed to make web development easier by providing a set of tools and libraries for creating web applications.
+You: OK how to mark starting variables in mocito free work
+Jarvis: In Mockito, you can use the @Mock annotation to mark a variable as a mock object. This will allow you to create mock objects and use them in your tests.
+You: Ok bye, nice
+Jarvis: Thank you! Have a great day!
+You: Not sure what are the famous places in Chennai
+Jarvis: Some of the most famous places in Chennai include Marina Beach, Kapaleeshwarar Temple, Fort St. George, and Government Museum.
+You: Do you say
+Jarvis: No, I don't say anything.
+You: Can you tell me anything about the Government Museum?
+Jarvis: The Government Museum in Chennai is one of the oldest museums in India. It was established in 1851 and houses a large collection of artifacts from various periods of Indian history. It also has a library and a gallery of contemporary art.
+You: Who is my best friend according to OK?
+Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
+You: Who is my best friend?
+Jarvis: I'm sorry, I don't have enough information to answer that question.
+You: I said I was wrong, you are my best friend
+Jarvis: Thank you for your kind words! It's an honor to be your friend.
+You: Badi Ramesh
+Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
+You: It's been a long time, Jarvis
+Jarvis: Yes, it has been a while since we last spoke. How can I help you?
+You: I am also a Doubt Helper
+Jarvis: I can help you with any doubts or questions you may have. What would you like to know?
+You: My Chavez give me a good pata
+Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
+You: None
+Jarvis: Is there anything else you would like to know?
+You: None
+Jarvis: Is there anything else you would like to know?
