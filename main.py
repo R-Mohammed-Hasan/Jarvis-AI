@@ -4,8 +4,9 @@ from torch.utils.data import Dataset,DataLoader
 import torch.nn as nn
 import json
 import torch
-import numpy as np 
+import numpy as np
 import random
+
 
 def TrainTasks():
 
@@ -44,7 +45,7 @@ def TrainTasks():
 
         return bag
 
-    with open("Data\\Tasks.json",'r') as f:
+    with open("Data/tasks.json",'r') as f:
         intents = json.load(f)
 
     all_words = []
@@ -136,13 +137,13 @@ def TrainTasks():
     "tags":tags
     }
 
-    FILE = "DataBase\\Tasks.pth"
+    FILE = "Database/tasks.pth"
     torch.save(data,FILE)
 
     print(f"Training Complete, File Saved To {FILE}")
     print("             ")
 
-TrainTasks()
+
 
 def TasksExecutor(query):
 
@@ -165,10 +166,10 @@ def TasksExecutor(query):
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    with open('Data\\Tasks.json','r') as json_data:
+    with open('Data/tasks.json','r') as json_data:
         intents = json.load(json_data)
 
-    FILE = "DataBase\\Tasks.pth"
+    FILE = "Database/tasks.pth"
     data = torch.load(FILE)
 
     input_size = data["input_size"]
@@ -183,9 +184,6 @@ def TasksExecutor(query):
     model.eval()
 
     Stemmer = PorterStemmer()
-
-    def tokenize(sentence):
-        return nltk.word_tokenize(sentence)
 
     def stem(word):
         return Stemmer.stem(word.lower())
@@ -225,3 +223,6 @@ def TasksExecutor(query):
                 reply = random.choice(intent["responses"])
                 
                 return reply
+            
+
+TrainTasks()
