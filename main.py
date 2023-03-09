@@ -10,6 +10,9 @@ import random
 
 def TrainTasks():
 
+    def tokenize(sentence):
+        return nltk.word_tokenize(sentence)
+
     class NeuralNet(nn.Module):
 
         def __init__(self,input_size,hidden_size,num_classes):
@@ -29,8 +32,6 @@ def TrainTasks():
 
     Stemmer = PorterStemmer()
 
-    def tokenize(sentence):
-        return nltk.word_tokenize(sentence)
 
     def stem(word):
         return Stemmer.stem(word.lower())
@@ -149,6 +150,7 @@ def TasksExecutor(query):
 
     class NeuralNet(nn.Module):
 
+        
         def __init__(self,input_size,hidden_size,num_classes):
             super(NeuralNet,self).__init__()
             self.l1 = nn.Linear(input_size,hidden_size)
@@ -199,7 +201,10 @@ def TasksExecutor(query):
         return bag
 
     sentence = str(query)
-
+    
+    def tokenize(sentence):
+            return nltk.word_tokenize(sentence)
+    
     sentence = tokenize(sentence)
     X = bag_of_words(sentence,all_words)
     X = X.reshape(1,X.shape[0])
@@ -225,4 +230,6 @@ def TasksExecutor(query):
                 return reply
             
 
-TrainTasks()
+# TrainTasks()
+
+print(TasksExecutor("open instagram"))
