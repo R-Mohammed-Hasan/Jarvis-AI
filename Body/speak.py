@@ -10,6 +10,7 @@
 
 # Speak("Hello")
 
+# selenium==4.1.3
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options

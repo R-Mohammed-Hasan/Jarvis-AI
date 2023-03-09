@@ -6,7 +6,7 @@ import json
 import torch
 import numpy as np
 import random
-
+from Features.open import OpenExe
 
 def TrainTasks():
 
@@ -232,4 +232,16 @@ def TasksExecutor(query):
 
 # TrainTasks()
 
-print(TasksExecutor("open instagram"))
+
+def MainTaskExecutor(query):
+    task = str(query).lower()
+    ReturnData = TasksExecutor(task)
+
+    if "open" in ReturnData:
+        value = OpenExe(task)
+        return value
+    
+    # need to add logic for checking the meetings from google calendar
+
+
+# print(TasksExecutor("open instagram"))

@@ -31,13 +31,14 @@ def Translate(text):
     result = GoogleTranslator(source='auto', target='en').translate(line)
     # data = result.text
     print(f"Data: {result}")
-    # return data
+    return result
 
 # Translate("How are you")
 
 def ListenAndSpeak():
     query = Listen()
     data = Translate(query)
+    print("data listened and transalted " + data)
     return data
 
 

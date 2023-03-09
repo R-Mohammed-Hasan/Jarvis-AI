@@ -25,12 +25,12 @@ def OpenExe(query):
         sleep(0.5)
         return True
     
-    elif "start" in query: 
-        nameOfApp = query.replace("start ", "")
+    # elif "start" in query: 
+    #     nameOfApp = query.replace("start ", "")
 
 
 
 
 # print(pyautogui.KEY_NAMES)    for list of keys options present
 
-OpenExe("open vs code") 
+# OpenExe("open vs code") 

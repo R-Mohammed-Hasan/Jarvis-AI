@@ -91,3 +91,13 @@ You: None
 Jarvis: Is there anything else you would like to know?
 You: None
 Jarvis: Is there anything else you would like to know?
+You: Who is my favoritue hero
+Jarvis: Your favorite hero is Tiger Shroff.
+You: None
+Jarvis: Is there anything else you would like to know?
+You: None
+Jarvis: Is there anything else you would like to know?
+You: None
+Jarvis: Is there anything else you would like to know?
+You: None
+Jarvis: Is there anything else you would like to know?
