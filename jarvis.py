@@ -11,11 +11,13 @@ def MainExe():
 
     while True:
         
-        # query = str(ListenAndSpeak()).replace(".","")
-        query = str("visit instagram").lower()
+        query = str(ListenAndSpeak()).replace(".","")
+         # if need to uncomment this, theen return in if condition. Else lose you computer
+        # query = str("open music").lower()
         valueReturned = MainTaskExecutor(query)
 
         if valueReturned==True:
+            # return
             pass
         elif len(query) >= 3:
             reply = ReplyBrain(query)

@@ -22,7 +22,7 @@ def Wakeup():
     query = Listen().lower()
 
     if "wake up" in query:
-        print(sys.platform)
+        print("OS platform " + sys.platform)
         opener = "python3"
         subprocess.call([opener, "main.py"])
     else:

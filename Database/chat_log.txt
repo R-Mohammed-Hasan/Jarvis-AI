@@ -89,15 +89,3 @@ You: My Chavez give me a good pata
 Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
 You: None
 Jarvis: Is there anything else you would like to know?
-You: None
-Jarvis: Is there anything else you would like to know?
-You: Who is my favoritue hero
-Jarvis: Your favorite hero is Tiger Shroff.
-You: None
-Jarvis: Is there anything else you would like to know?
-You: None
-Jarvis: Is there anything else you would like to know?
-You: None
-Jarvis: Is there anything else you would like to know?
-You: None
-Jarvis: Is there anything else you would like to know?

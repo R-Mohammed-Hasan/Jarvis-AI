@@ -7,6 +7,7 @@ import torch
 import numpy as np
 import random
 from Features.open import OpenExe
+from whatsapp import WhatsappMessageSender
 
 def TrainTasks():
 
@@ -236,10 +237,18 @@ def TasksExecutor(query):
 def MainTaskExecutor(query):
     task = str(query).lower()
     ReturnData = TasksExecutor(task)
-
+    print("ReturnData " + ReturnData)
     if "open" in ReturnData:
         value = OpenExe(task)
         return value
+    
+    elif "whatsapp" in ReturnData:
+            names = str(task).replace("send ","")
+            names = str(names).replace("whatsapp ","")
+            names = str(names).replace("message ","")
+            names = str(names).replace("to ","")
+            WhatsappMessageSender(names)
+            return True
     
     # need to add logic for checking the meetings from google calendar
 
