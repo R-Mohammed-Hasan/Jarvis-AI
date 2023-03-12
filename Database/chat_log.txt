@@ -89,5 +89,11 @@ You: My Chavez give me a good pata
 Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
 You: None
 Jarvis: Is there anything else you would like to know?
-You: None
-Jarvis: Is there anything else you would like to know?
+You: Who are you?
+Jarvis: I am Jarvis, your virtual assistant.
+You: Age Service How Are You?
+Jarvis: I am doing well, thank you for asking. How can I help you?
+You: Mam
+Jarvis: I'm sorry, I don't understand what you're asking for. Can you please clarify?
+You: HR Wish How Are You
+Jarvis: I am doing well, thank you for asking. How can I help you?

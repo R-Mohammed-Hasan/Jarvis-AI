@@ -1,15 +1,14 @@
 import speech_recognition as sr
-# from googletrans import Translator
 from deep_translator import GoogleTranslator
 
 
-def Listen():
+def Listen(listenFor=7):
     r = sr.Recognizer()
 
     with sr.Microphone() as source:
         print("Listening...")
         r.pause_threshold = 1
-        audio = r.listen(source, 0, 8) # 8 in listen() specifies the no. of seconds to listen for
+        audio = r.listen(source, 0, listenFor) # 8 in listen() specifies the no. of seconds to listen for
 
     try: 
         print("Recognizing...")
@@ -21,24 +20,20 @@ def Listen():
     query = str(query).lower()
     return query
 
-# print(Listen())
-
 
 def Translate(text):
     line = str(text)
-    # translator = Translator()
-    # result = translator.translate(line, "en")
-    result = GoogleTranslator(source='auto', target='en').translate(line)
+    result = GoogleTranslator(source='ta', target='en').translate(line)
     # data = result.text
-    print(f"Data: {result}")
-    # return data
+    print(f"Translated Data: {result}")
+    return result
 
 # Translate("How are you")
 
-def ListenAndSpeak():
-    query = Listen()
+def ListenAndTranslate(listenFor=7):
+    query = Listen(listenFor)
     data = Translate(query)
     return data
 
 
-# ListenAndSpeak()
+# ListenAndTranslate()

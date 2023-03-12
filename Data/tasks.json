@@ -7,7 +7,7 @@
     },
     {
       "tag": "whatsapp",
-      "patterns": ["whatsapp", "send message", "chat"],
+      "patterns": ["whatsapp", "message", "chat", "send"],
       "responses": ["whatsapp"]
     },
     {

@@ -6,9 +6,13 @@ import json
 import torch
 import numpy as np
 import random
-
+from Features.open import OpenExe
+from whatsapp import WhatsappMessageSender
 
 def TrainTasks():
+
+    def tokenize(sentence):
+        return nltk.word_tokenize(sentence)
 
     class NeuralNet(nn.Module):
 
@@ -29,8 +33,6 @@ def TrainTasks():
 
     Stemmer = PorterStemmer()
 
-    def tokenize(sentence):
-        return nltk.word_tokenize(sentence)
 
     def stem(word):
         return Stemmer.stem(word.lower())
@@ -149,6 +151,7 @@ def TasksExecutor(query):
 
     class NeuralNet(nn.Module):
 
+        
         def __init__(self,input_size,hidden_size,num_classes):
             super(NeuralNet,self).__init__()
             self.l1 = nn.Linear(input_size,hidden_size)
@@ -199,7 +202,10 @@ def TasksExecutor(query):
         return bag
 
     sentence = str(query)
-
+    
+    def tokenize(sentence):
+            return nltk.word_tokenize(sentence)
+    
     sentence = tokenize(sentence)
     X = bag_of_words(sentence,all_words)
     X = X.reshape(1,X.shape[0])
@@ -219,10 +225,33 @@ def TasksExecutor(query):
         for intent in intents['intents']:
 
             if tag == intent["tag"]:
+                print("Tag " + tag)
 
                 reply = random.choice(intent["responses"])
                 
                 return reply
             
 
-TrainTasks()
+# TrainTasks()
+
+
+def MainTaskExecutor(query):
+    if len(query) > 0:
+        task = str(query).lower()
+        print("Task " + task)
+        ReturnData = TasksExecutor(task)
+        print("ReturnData " + ReturnData)
+        if "open" in ReturnData:
+            value = OpenExe(task)
+            return value
+        
+        elif "whatsapp" in ReturnData or "message" in ReturnData:
+            WhatsappMessageSender()
+            return True
+        
+        # elif "calendar" in ReturnData:
+
+        # need to add logic for checking the meetings from google calendar
+
+
+# print(TasksExecutor("open instagram"))
