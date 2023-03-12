@@ -1,5 +1,5 @@
 from Body.speak import Speak
-from Body.listen import ListenAndSpeak
+from Body.listen import ListenAndTranslate
 from Brain.brain import ReplyBrain
 from Features.clap import Tester
 from main import MainTaskExecutor
@@ -11,8 +11,8 @@ def MainExe():
 
     while True:
         
-        query = str(ListenAndSpeak()).replace(".","")
-         # if need to uncomment this, theen return in if condition. Else lose you computer
+        query = str(ListenAndTranslate()).replace(".","")
+         # if need to uncomment this, theen return in if condition. Else lose your computer
         # query = str("open music").lower()
         valueReturned = MainTaskExecutor(query)
 

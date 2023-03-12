@@ -225,6 +225,7 @@ def TasksExecutor(query):
         for intent in intents['intents']:
 
             if tag == intent["tag"]:
+                print("Tag " + tag)
 
                 reply = random.choice(intent["responses"])
                 
@@ -235,22 +236,22 @@ def TasksExecutor(query):
 
 
 def MainTaskExecutor(query):
-    task = str(query).lower()
-    ReturnData = TasksExecutor(task)
-    print("ReturnData " + ReturnData)
-    if "open" in ReturnData:
-        value = OpenExe(task)
-        return value
-    
-    elif "whatsapp" in ReturnData:
-            names = str(task).replace("send ","")
-            names = str(names).replace("whatsapp ","")
-            names = str(names).replace("message ","")
-            names = str(names).replace("to ","")
-            WhatsappMessageSender(names)
+    if len(query) > 0:
+        task = str(query).lower()
+        print("Task " + task)
+        ReturnData = TasksExecutor(task)
+        print("ReturnData " + ReturnData)
+        if "open" in ReturnData:
+            value = OpenExe(task)
+            return value
+        
+        elif "whatsapp" in ReturnData or "message" in ReturnData:
+            WhatsappMessageSender()
             return True
-    
-    # need to add logic for checking the meetings from google calendar
+        
+        # elif "calendar" in ReturnData:
+
+        # need to add logic for checking the meetings from google calendar
 
 
 # print(TasksExecutor("open instagram"))
