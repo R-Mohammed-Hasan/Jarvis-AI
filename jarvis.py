@@ -6,7 +6,6 @@ from main import MainTaskExecutor
 
 print("Starting Jarvis...Please wait...")
 def MainExe():
-    print("Executing Main exe")
     # Speak("Hello sir ! Hope you have a Good day. I'm ready to help you.... ")
 
     while True:

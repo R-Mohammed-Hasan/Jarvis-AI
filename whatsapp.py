@@ -18,8 +18,7 @@ ListWeb = {'mom' : "+919566062344",
 
 def WhatsappMessageSender(prefix=""):
     Speak(f"{prefix} Whom do you want to send message sir")
-    Name = str(ListenAndTranslate())
-    print("Name: {}".format(Name))
+    Name = str(ListenAndTranslate(5))
     if len(Name) < 2:
         WhatsappMessageSender("Sorry I did'nt get you")
     options = Options()
@@ -36,7 +35,8 @@ def WhatsappMessageSender(prefix=""):
     Speak("Initializing Whatsapp ")
     Speak(f"Preparing To Send a Message To {Name}")
     Speak("What's The Message By The Way?")
-    Message = ListenAndSpeak()
+    Message = ListenAndTranslate()
+    print(ListWeb[Name])
     Number = ListWeb[Name]
     LinkWeb = 'https://web.whatsapp.com/send?phone=' + Number + "&text=" + Message
     driver.get(LinkWeb)
