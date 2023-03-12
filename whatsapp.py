@@ -12,9 +12,23 @@ import pathlib
 
 scriptDirectory = pathlib.Path().absolute()
 
+# options = Options()
+# options.add_experimental_option("excludeSwitches", ["enable-logging"])
+# options.add_argument("--profile-directory=Default")
+# options.add_argument(f"user-data-dir={scriptDirectory}\\userdata")
+# os.system("")
+# os.environ["WDM_LOG_LEVEL"] = "0"
+# PathofDriver = "Database/chromedriver"
+# driver = webdriver.Chrome(PathofDriver,options=options)
+# driver.maximize_window()
+# driver.get("https://web.whatsapp.com/")
+
 ListWeb = {'mom' : "+919566062344",
+           'mam' : "+919566062344",
             'dost': "+91",
             "gf": '+91'}
+
+# sleep(10)
 
 def WhatsappMessageSender(prefix=""):
     Speak(f"{prefix} Whom do you want to send message sir")
@@ -24,6 +38,7 @@ def WhatsappMessageSender(prefix=""):
     options = Options()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     options.add_argument("--profile-directory=Default")
+    # options.headless = True  uncomment this if u need to send message in BG
     options.add_argument(f"user-data-dir={scriptDirectory}\\userdata")
     os.system("")
     os.environ["WDM_LOG_LEVEL"] = "0"
@@ -36,8 +51,8 @@ def WhatsappMessageSender(prefix=""):
     Speak(f"Preparing To Send a Message To {Name}")
     Speak("What's The Message By The Way?")
     Message = ListenAndTranslate()
-    print(ListWeb[Name])
-    Number = ListWeb[Name]
+    print(ListWeb['mom'])
+    Number = ListWeb['mom']
     LinkWeb = 'https://web.whatsapp.com/send?phone=' + Number + "&text=" + Message
     driver.get(LinkWeb)
     sleep(5)
